@@ -69,6 +69,10 @@ pub use proto::{
     Transmit, TransportConfig, VarInt,
 };
 
+pub use crypto::Session;
+pub use proto::transport_parameters::TransportParameters;
+pub use proto::{ConnectionId, Side};
+
 pub use crate::connection::{
     Connecting, Connection, Datagrams, IncomingBiStreams, IncomingUniStreams, NewConnection,
     SendDatagramError, UnknownStream, ZeroRttAccepted,
